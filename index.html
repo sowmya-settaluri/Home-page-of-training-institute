@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <title>Training Institute</title>
+
+</head>
+<body class="host_version"> 
+
+	
+    <!-- LOADER -->
+	
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+        <div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="data:image/png;base64,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" alt="logo" height="80" width="200" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Courses </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog </a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Sign in</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-interval="2000"  >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('https://www.studying-in-germany.org/wp-content/uploads/2016/07/Getting-a-masters-degree-in-Germany.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2><strong>Learn to thrive </strong> training centre</h2>
+										<p class="lead">We provide you with the best courses along with experienced professionals as tutors. </p>
+				
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('https://www.kmslh.com/wp-content/uploads/2018/05/Why-to-Apply-Knowledge-Management-to-the-Insurance-Industry.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"> <strong>Industrial knowledge</strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">By the end of the courses, you will be ready to excell in the corporate world. </p>
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('https://blog.originlearning.com/wp-content/uploads/2016/09/learning-components-og.png');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>Passion for learning</strong></h2>
+										<p class="lead" data-animation="animated fadeInLeft">Our tutors teach in a creative way such that your interest and passion for that particular domain increases.</p>
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Motto and Agenda</h3>
+                    <p class="lead">Our motto is "Commitment to Excellence". We teach in the best way possible and ensure that you will learn a lot after the courses are completed. There will also be assignments everyday, so you can practice what you've learned consistently.</p>
+                </div>
+            </div><!-- end title -->
+        
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Start from scratch</h2>
+                        <br>
+                        <br>
+                        <h3>Want to learn something absolutely new? </h3>
+                        <br>
+                        <h3>An open mind is the best place to build a palace! Every course covers the subject from basics.</h3>
+
+                        
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://media.istockphoto.com/photos/leadership-and-career-development-concept-picture-id1182326712?k=6&m=1182326712&s=612x612&w=0&h=RFL5EH9yPZGuYCWZFTC99LGmINq4W81nKEPBxqB7ZUo=" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://image.shutterstock.com/image-vector/certificate-symbol-on-yellow-backgroundclean-260nw-227773747.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Certificate on completion</h2>
+                        <br>
+                        <br>
+                        <h3>Recognized Certificates to give your resume an edge.</h3>
+                        <br>
+                        <h3> A blue-chip credential to enter your field with. </h3>
+
+                        
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Mentorship and Coaching</h2>
+                        <br>
+                        <br>
+                        <h3>Industry expert to guide you through the course and share their experience with you. </h3>
+                        <br>
+                        <h3>Gain a friend in field and coach for life.</h3>
+
+                        
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://d19d5sz0wkl0lu.cloudfront.net/dims4/default/52b96fe/2147483647/resize/800x%3E/quality/90/?url=https%3A%2F%2Fatd-brightspot.s3.amazonaws.com%2F79%2F81%2F970c57febcbb0f6e93a1384a5dc0%2Fmentoring.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div><!--end row-->
+            <div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="https://miro.medium.com/max/4800/1*62GJBXP7cikAdwCBiiI7ug.jpeg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="message-box">
+                        <h2>Build Projects</h2>
+                        <br>
+                        <br>
+                        <h3> There are Internships, projects and practical teaching methods.</h3>
+                        <br>
+                        <h3>They help you become instantly employable and desirable by top companies. </h3>
+
+                        
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+   
+	<div class="section cl">
+		<div class="container">
+			<div class="row text-left stat-wrap">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
+					<p class="stat_count">5000</p>
+					<h3>Students</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
+					<p class="stat_count">150</p>
+					<h3>Courses</h3>
+				</div><!-- end col -->
+
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
+					<p class="stat_count">20</p>
+					<h3>Years Completed</h3>
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- end section -->
+
+    
+    <div id="testimonials" class="parallax section db parallax-off" >
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Testimonials</h3>
+                
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="https://i.pinimg.com/236x/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg" alt="" class="img-fluid rounded-circle" >
+                                <h4>Vishal </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                                <p class="lead">I joined the Full Stack development course of the Learn to thrive institute and now I'm working with infosys. I had a wonderful time in the institute and can confidently say, I learnt a lot of things here.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="https://media.istockphoto.com/photos/passport-picture-of-a-smiling-turkish-businesswoman-picture-id856599656?k=6&m=856599656&s=612x612&w=0&h=4Nwo_zZorMKSrrHb-c9DoO7JarfeuKQXXV2U6Ky6N9Q=" alt="" class="img-fluid rounded-circle">
+                                <h4>Nidhi</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                                <p class="lead">I joined the Android app development course and I am thankful for this opportunity. It was a flawless journey! I've learnt a lot from the institute. The faculty members are highly experienced and have a lot of patience.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+							<div class="testi-meta">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELK0H8XRYgDdz1rFyUCqyL13XvOLhVagrPWFjWKJKzx8F6WqK14LPK_0zog1paaQ3b0Y&usqp=CAU" alt="" class="img-fluid rounded-circle"> 
+                                <h4>Sindhu </h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                                <p class="lead">I've done my Data Science course from Learn to thrive institute. I must say learning experience is very good with the best practical knowledge. Faculty members monitored and supported me whenever I needed. I think I took the right decision to join the institute as I'm completely satisfied.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+    
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <h1 style="text-align:center;">Sponsors</h1>
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="images/logo_01.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="images/logo_02.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="images/logo_03.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="images/logo_04.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                   <img src="images/logo_05.png" alt="" class="img-repsonsive">
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <img src="images/logo_06.png" alt="" class="img-repsonsive">
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Social media links</h3>
+                        </div>
+                        <p>Do follow us on our social medial links</p>
+						<div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>						
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Courses</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="#">Android app development</a></li>
+                            <li><a href="#">Full stack development</a></li>
+                            <li><a href="#">Data Science</a></li>
+                            <li><a href="#">Artificial Intelligence</a></li>
+                            <li><a href="#">Many more</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+		
+                
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. Learn to thrive institute.</p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>
